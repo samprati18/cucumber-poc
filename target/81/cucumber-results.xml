@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="8.421997">
+<testcase classname="Customer Login - Happy Path" name="Valid customer id and password  and response contains the success message" time="4.261186">
+<system-out><![CDATA[Given the customerLogin requests "CustomerLoginRequest".....................passed
+When Customer provide user name as 925903 and password as password..........passed
+Then Customer should get valid response from the API........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer Login - Negative Scenario" name="Invalid customer id and password  and response contains the success message" time="0.386449">
+<system-out><![CDATA[Given the customer is requesting  "CustomerLoginRequest"....................passed
+When customer provide invalid user name as 925903 and password as password1234.passed
+Then customer should get invalid credentials  response from the API.........passed
+]]></system-out>
+</testcase>
+<testcase classname="GetCustomerInfo - Happy Path scenarios" name="Valid customer id  and response contains the success message" time="2.120627">
+<system-out><![CDATA[Given the customerLogin is requesting for "GetCustomerDetails"..............passed
+When Customer provide customerId as 109106047...............................passed
+Then Customer should get response from the API..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="GenerateQRCode - Happy Path scenarios" name="Valid customer id and amount and response contains the success message" time="0.455701">
+<system-out><![CDATA[Given the customer  is executing  "GenerateQRCode"..........................passed
+When Customer enters customerId 925903 and amount as 12344..................passed
+Then Customer should receive qr code from api...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="ReadQRCode - Happy Path scenarios" name="Merchant will read the qr code" time="1.198034">
+<system-out><![CDATA[Given the merchant will execute  "ReadQRCode"...............................passed
+When merchant  enter details................................................passed
+Then merchant should read qr code from api..................................passed
+]]></system-out>
+</testcase>
+</testsuite>

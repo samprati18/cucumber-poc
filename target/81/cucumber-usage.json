@@ -1,0 +1,272 @@
+[
+  {
+    "source": "customer should get invalid credentials  response from the API",
+    "steps": [
+      {
+        "name": "customer should get invalid credentials  response from the API",
+        "aggregatedDurations": {
+          "average": 0.0059351,
+          "median": 0.0059351
+        },
+        "durations": [
+          {
+            "duration": 0.0059351,
+            "location": "02_CustomerLoginNegScenario.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the customerLogin is requesting for (.*)",
+    "steps": [
+      {
+        "name": "the customerLogin is requesting for \"GetCustomerDetails\"",
+        "aggregatedDurations": {
+          "average": 0.000342799,
+          "median": 0.000342799
+        },
+        "durations": [
+          {
+            "duration": 0.000342799,
+            "location": "03_GetCustomerDetails.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Customer should get valid response from the API",
+    "steps": [
+      {
+        "name": "Customer should get valid response from the API",
+        "aggregatedDurations": {
+          "average": 0.9833969,
+          "median": 0.9833969
+        },
+        "durations": [
+          {
+            "duration": 0.9833969,
+            "location": "01_CustomerLogin.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the customerLogin requests (.*)",
+    "steps": [
+      {
+        "name": "the customerLogin requests \"CustomerLoginRequest\"",
+        "aggregatedDurations": {
+          "average": 0.310962499,
+          "median": 0.310962499
+        },
+        "durations": [
+          {
+            "duration": 0.310962499,
+            "location": "01_CustomerLogin.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Customer enters customerId (.*) and amount as (.*)",
+    "steps": [
+      {
+        "name": "Customer enters customerId 925903 and amount as 12344",
+        "aggregatedDurations": {
+          "average": 0.4917573,
+          "median": 0.4917573
+        },
+        "durations": [
+          {
+            "duration": 0.4917573,
+            "location": "04_GenerateQRCode.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Customer should receive qr code from api",
+    "steps": [
+      {
+        "name": "Customer should receive qr code from api",
+        "aggregatedDurations": {
+          "average": 0.0141502,
+          "median": 0.0141502
+        },
+        "durations": [
+          {
+            "duration": 0.0141502,
+            "location": "04_GenerateQRCode.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the merchant will execute (.*)",
+    "steps": [
+      {
+        "name": "the merchant will execute  \"ReadQRCode\"",
+        "aggregatedDurations": {
+          "average": 0.0005313,
+          "median": 0.0005313
+        },
+        "durations": [
+          {
+            "duration": 0.0005313,
+            "location": "05_ReadQRCode.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "customer provide invalid user name as (.*) and password as (.*)",
+    "steps": [
+      {
+        "name": "customer provide invalid user name as 925903 and password as password1234",
+        "aggregatedDurations": {
+          "average": 0.108202,
+          "median": 0.108202
+        },
+        "durations": [
+          {
+            "duration": 0.108202,
+            "location": "02_CustomerLoginNegScenario.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Customer should get response from the API",
+    "steps": [
+      {
+        "name": "Customer should get response from the API",
+        "aggregatedDurations": {
+          "average": 0.012582701,
+          "median": 0.012582701
+        },
+        "durations": [
+          {
+            "duration": 0.012582701,
+            "location": "03_GetCustomerDetails.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Customer provide user name as (.*) and password as (.*)",
+    "steps": [
+      {
+        "name": "Customer provide user name as 925903 and password as password",
+        "aggregatedDurations": {
+          "average": 5.0224897,
+          "median": 5.0224897
+        },
+        "durations": [
+          {
+            "duration": 5.0224897,
+            "location": "01_CustomerLogin.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the customer is requesting (.*)",
+    "steps": [
+      {
+        "name": "the customer is requesting  \"CustomerLoginRequest\"",
+        "aggregatedDurations": {
+          "average": 0.0003664,
+          "median": 0.0003664
+        },
+        "durations": [
+          {
+            "duration": 0.0003664,
+            "location": "02_CustomerLoginNegScenario.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Customer provide customerId as (.*)",
+    "steps": [
+      {
+        "name": "Customer provide customerId as 109106047",
+        "aggregatedDurations": {
+          "average": 2.3254923,
+          "median": 2.3254923
+        },
+        "durations": [
+          {
+            "duration": 2.3254923,
+            "location": "03_GetCustomerDetails.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "merchant should read qr code from api",
+    "steps": [
+      {
+        "name": "merchant should read qr code from api",
+        "aggregatedDurations": {
+          "average": 0.001555099,
+          "median": 0.001555099
+        },
+        "durations": [
+          {
+            "duration": 0.001555099,
+            "location": "05_ReadQRCode.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the customer  is executing (.*)",
+    "steps": [
+      {
+        "name": "the customer  is executing  \"GenerateQRCode\"",
+        "aggregatedDurations": {
+          "average": 0.0003413,
+          "median": 0.0003413
+        },
+        "durations": [
+          {
+            "duration": 0.0003413,
+            "location": "04_GenerateQRCode.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "merchant  enter details",
+    "steps": [
+      {
+        "name": "merchant  enter details",
+        "aggregatedDurations": {
+          "average": 0.7014786,
+          "median": 0.7014786
+        },
+        "durations": [
+          {
+            "duration": 0.7014786,
+            "location": "05_ReadQRCode.feature:15"
+          }
+        ]
+      }
+    ]
+  }
+]

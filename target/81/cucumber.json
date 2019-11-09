@@ -1,0 +1,369 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Valid customer id and password  and response contains the success message",
+        "description": "\r\nPreconditions for testing the scenario:\r\n1. The customer exists in DB.\r\n2. Rest API is deployed and up and running on server \"http://3.124.99.106:8027/ikano/customerLogin\"",
+        "id": "customer-login---happy-path;valid-customer-id-and-password--and-response-contains-the-success-message;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 140104200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the customerLogin requests \"CustomerLoginRequest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CustomerLoginRequest\"",
+                  "offset": 27
+                }
+              ],
+              "location": "CustomerLoginStepDefinitions.existing_customer_login_into_module(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3901171801,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Customer provide user name as 925903 and password as password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "925903",
+                  "offset": 30
+                },
+                {
+                  "val": "password",
+                  "offset": 53
+                }
+              ],
+              "location": "CustomerLoginStepDefinitions.customer_is_providing_userName_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 219909700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Customer should get valid response from the API",
+            "match": {
+              "location": "CustomerLoginStepDefinitions.verify_valid_response()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer Login - Happy Path",
+    "description": "Purpose of this API is to validate the customer id and password.\r\nAnd return the success/invalid message  based on the validation on customer id and password",
+    "id": "customer-login---happy-path",
+    "keyword": "Feature",
+    "uri": "01_CustomerLogin.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Invalid customer id and password  and response contains the success message",
+        "description": "\r\nPreconditions for testing the scenario:\r\n1. The customer exists in DB.\r\n2. Rest API is deployed and up and running on server \"http://3.124.99.106:8027/ikano/customerLogin\"",
+        "id": "customer-login---negative-scenario;invalid-customer-id-and-password--and-response-contains-the-success-message;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 417899,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the customer is requesting  \"CustomerLoginRequest\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": " \"CustomerLoginRequest\"",
+                  "offset": 27
+                }
+              ],
+              "location": "CustomerLoginNegativeScenarioStepDefinitions.existing_customer_login_into_module(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 383260101,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "customer provide invalid user name as 925903 and password as password1234",
+            "match": {
+              "arguments": [
+                {
+                  "val": "925903",
+                  "offset": 38
+                },
+                {
+                  "val": "password1234",
+                  "offset": 61
+                }
+              ],
+              "location": "CustomerLoginNegativeScenarioStepDefinitions.customer_is_providing_userName_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2771400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "customer should get invalid credentials  response from the API",
+            "match": {
+              "location": "CustomerLoginNegativeScenarioStepDefinitions.verify_valid_response()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer Login - Negative Scenario",
+    "description": "Purpose of this API is to validate the customer id and password.\r\nAnd return the invalid message  based on the validation on customer id and password",
+    "id": "customer-login---negative-scenario",
+    "keyword": "Feature",
+    "uri": "02_CustomerLoginNegScenario.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Valid customer id  and response contains the success message",
+        "description": "\r\nPreconditions for testing the scenario:\r\n1. The customer exists in DB.\r\n2. Rest API is deployed and up and running on server \"http://3.124.24.154:8085/ikano/srh\"",
+        "id": "getcustomerinfo---happy-path-scenarios;valid-customer-id--and-response-contains-the-success-message;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 479900,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 12,
+                "value": "# and \"CustomerLoginURL\" - You need to make function which will read the this string and config/properties file have key value pair which will hold the API #end   points"
+              }
+            ],
+            "line": 14,
+            "name": "the customerLogin is requesting for \"GetCustomerDetails\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetCustomerDetails\"",
+                  "offset": 36
+                }
+              ],
+              "location": "GetCustomerInfoStepDefinitions.existing_customer_requests_for_accountId(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2105232600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Customer provide customerId as 109106047",
+            "match": {
+              "arguments": [
+                {
+                  "val": "109106047",
+                  "offset": 31
+                }
+              ],
+              "location": "GetCustomerInfoStepDefinitions.customer_is_providing_customerId(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14914900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Customer should get response from the API",
+            "match": {
+              "location": "GetCustomerInfoStepDefinitions.verify_response()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GetCustomerInfo - Happy Path scenarios",
+    "description": "Purpose of this API is to fetch the customer details from SAAS/Master Data.\r\nAnd return the success/invalid message  based on the validation on customerId",
+    "id": "getcustomerinfo---happy-path-scenarios",
+    "keyword": "Feature",
+    "uri": "03_GetCustomerDetails.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Valid customer id and amount and response contains the success message",
+        "description": "\r\nPreconditions for testing the scenario:\r\n1. The customer exists in DB.\r\n2. Rest API is deployed and up and running on server \"http://3.124.99.106:8086/ikano/generateQRCode\"",
+        "id": "generateqrcode---happy-path-scenarios;valid-customer-id-and-amount-and-response-contains-the-success-message;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 298300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the customer  is executing  \"GenerateQRCode\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": " \"GenerateQRCode\"",
+                  "offset": 27
+                }
+              ],
+              "location": "GenerateQRCodeStepDefinitions.the_customer_is_executing_qr_code(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 426135200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Customer enters customerId 925903 and amount as 12344",
+            "match": {
+              "arguments": [
+                {
+                  "val": "925903",
+                  "offset": 27
+                },
+                {
+                  "val": "12344",
+                  "offset": 48
+                }
+              ],
+              "location": "GenerateQRCodeStepDefinitions.customer_enters_customerId_and_amount(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29267200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Customer should receive qr code from api",
+            "match": {
+              "location": "GenerateQRCodeStepDefinitions.customer_should_receive_qr_code_from_api()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "GenerateQRCode - Happy Path scenarios",
+    "description": "Purpose of this API is to generate QR Code for customer.\r\nAnd return the success/invalid message  based on the validation on customerId and amount",
+    "id": "generateqrcode---happy-path-scenarios",
+    "keyword": "Feature",
+    "uri": "04_GenerateQRCode.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 21,
+        "name": "Merchant will read the qr code",
+        "description": "\r\nPreconditions for testing the scenario:\r\n1. The customer exists in DB.\r\n2. Rest API is deployed and up and running on server \"http://3.124.99.106:8086/ikano/readQRCode\"",
+        "id": "readqrcode---happy-path-scenarios;merchant-will-read-the-qr-code;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 559601,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the merchant will execute  \"ReadQRCode\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": " \"ReadQRCode\"",
+                  "offset": 26
+                }
+              ],
+              "location": "ReadQRCodeStepDefinitions.the_merchant_will_execute(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1195930400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "merchant  enter details",
+            "match": {
+              "location": "ReadQRCodeStepDefinitions.merchant_enter_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1543700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "merchant should read qr code from api",
+            "match": {
+              "location": "ReadQRCodeStepDefinitions.merchant_should_read_qr_code_from_api()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ReadQRCode - Happy Path scenarios",
+    "description": "Purpose of this API is to read QR Code for customer.\r\nAnd return the success/invalid message",
+    "id": "readqrcode---happy-path-scenarios",
+    "keyword": "Feature",
+    "uri": "05_ReadQRCode.feature"
+  }
+]
