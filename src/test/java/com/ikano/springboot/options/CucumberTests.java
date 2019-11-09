@@ -1,35 +1,22 @@
-package com.ikano.springboot.options;
+package com.ikano.springboot.stepdefs;
 
 
 import com.cucumber.listener.Reporter;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
-import freemarker.template.Configuration;
-import freemarker.template.Template;
-import freemarker.template.TemplateException;
-import freemarker.template.TemplateExceptionHandler;
-import org.junit.After;
 import org.junit.AfterClass;
-import org.junit.jupiter.api.AfterAll;
 import org.junit.runner.RunWith;
-import org.springframework.test.context.event.annotation.AfterTestClass;
-import org.springframework.test.context.event.annotation.AfterTestExecution;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
 import javax.mail.*;
-import javax.mail.internet.*;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
+import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 import java.io.File;
 import java.io.IOException;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Properties;
 
 
