@@ -39,7 +39,7 @@ import java.util.Properties;
         glue = {"com/ikano/springboot/stepdefs"},
         monochrome = true,
         plugin = {
-                "html:target/basicReport", "json:target/basicReport/cucumber.json",
+                "html:target/basicReport", "json:target/cucumber.json",
                 "pretty:target/basicReport/cucumber-pretty.txt",
                 "usage:target/basicReport/cucumber-usage.json", "junit:target/basicReport/cucumber-results.xml",
                 "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
