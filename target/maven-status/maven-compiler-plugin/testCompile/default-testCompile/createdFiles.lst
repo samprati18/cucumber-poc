@@ -1,5 +1,0 @@
-com\ikano\springboot\stepdefs\GetCustomerInfoStepDefinitions.class
-com\ikano\springboot\services\CustomerLoginTests.class
-com\ikano\springboot\options\CucumberTests.class
-com\ikano\springboot\model\Endpoint.class
-com\ikano\springboot\stepdefs\CustomerLoginStepDefinitions.class
